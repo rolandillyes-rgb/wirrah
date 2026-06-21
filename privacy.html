@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+  Wirrah Pty Ltd | Privacy Statement (subpage) | DRAFT v1
+  SOURCE: Wirrah Data Sovereignty Statement v4 (substantive data commitments) + standard
+    Australian Privacy Principles scaffolding (rights, complaints, OAIC) adapted from the GraceX policy.
+  STATUS: DRAFT. Must pass Lawpath (legal wash) and Tanika (language + cultural pass on the
+    data sovereignty content) before this page is published and linked from index.html.
+
+  OPEN ITEMS FOR LAWPATH / TANIKA (resolve before publishing):
+   1. CONTACT ADDRESS: a privacy statement contact block conventionally lists a postal address.
+      Only the email (tanika@wirrah.com.au) is stated. Add Wirrah's registered office address, or
+      confirm email-only is acceptable.
+   2. WEBSITE ANALYTICS: index.html currently runs NO analytics or tracking cookies (no Google
+      Analytics / Clarity). This page states that as fact. If analytics is ever added, this section
+      must be updated and a cookie notice considered.
+   3. SENSITIVE INFORMATION: survey responses may meet the Privacy Act definition of "sensitive
+      information" (health-adjacent). Because data stays in the ACCHO tenancy and Wirrah does not
+      hold it, the handling story differs from a normal collector. Lawpath to confirm framing and
+      whether a separate collection notice is needed at the point of survey.
+   4. GDPR: AU-focused audience (ACCHOs, AMSs). A short GDPR note is NOT included to keep the page
+      Wirrah-true. Add one only if EU/EEA exposure is expected. Flag for Lawpath.
+   5. GRACEX AS PROCESSOR: GraceX is named as the platform provider under licence. Confirm the
+      processor / sub-processor wording against the Platform Licence Agreement once executed.
+-->
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Privacy Statement | Wirrah</title>
+<meta name="description" content="How Wirrah Pty Ltd handles personal information, and the data sovereignty commitments that keep First Nations data under First Nations control.">
+<meta name="robots" content="noindex">
+<!-- noindex while in DRAFT. Remove this robots tag when the page is approved for publishing. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#EEEAE5; --ivory-dim:#DDD9D3; --green:#16331C;
+    --moss:#4D596A; --everglade:#681C1C; --text:#1f1f1f;
+    --serif:'Playfair Display',Georgia,'Times New Roman',serif;
+    --sans:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --maxw:1080px; --docw:820px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans); font-weight:300; background:var(--ivory); color:var(--text); font-size:16px; line-height:1.7; -webkit-font-smoothing:antialiased;}
+  a{color:var(--moss);}
+  ::selection{background:rgba(22,51,28,0.15);}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 32px;}
+
+  nav{position:sticky; top:0; z-index:50; background:var(--green); display:flex; align-items:center; justify-content:space-between; padding:0 32px; height:58px;}
+  .nav-logo{display:flex; align-items:center; text-decoration:none;}
+  .logo-img{height:23px; width:auto; display:block;}
+  .nav-logo span{font-family:var(--serif); font-size:1.05rem; letter-spacing:0.28em; color:var(--ivory); font-weight:500;}
+  .nav-back{font-size:0.7rem; letter-spacing:0.13em; text-transform:uppercase; color:rgba(238,234,229,0.72); text-decoration:none; font-weight:400; transition:color .2s;}
+  .nav-back:hover{color:var(--ivory);}
+
+  .doc-head{background:var(--green); color:var(--ivory); padding:74px 0 56px;}
+  .doc-head .eyebrow{font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:rgba(238,234,229,0.55); font-weight:500; margin-bottom:18px;}
+  .doc-head h1{font-family:var(--serif); font-weight:400; font-size:clamp(2rem,4.4vw,3rem); line-height:1.12; margin-bottom:20px; max-width:18ch;}
+  .doc-head .meta{font-size:0.9rem; color:rgba(238,234,229,0.72); line-height:1.7;}
+  .doc-head .meta b{color:var(--ivory); font-weight:500;}
+
+  .doc{padding:64px 0 30px;}
+  .doc .inner{max-width:var(--docw);}
+  .doc h2{font-family:var(--serif); font-weight:400; color:var(--green); font-size:1.5rem; line-height:1.25; margin:46px 0 16px;}
+  .doc h2:first-child{margin-top:0;}
+  .doc h3{font-family:var(--sans); font-weight:500; color:var(--green); font-size:1.02rem; margin:26px 0 8px;}
+  .doc p{margin-bottom:16px; color:#2a2a2a;}
+  .doc ul{margin:0 0 16px 22px;}
+  .doc li{margin-bottom:8px; color:#2a2a2a;}
+  .doc a{text-decoration:underline; text-underline-offset:2px;}
+  .doc strong{font-weight:500; color:#1f1f1f;}
+
+  .callout{background:#fff; border:1px solid var(--ivory-dim); border-left:3px solid var(--green); padding:24px 26px; margin:26px 0 8px;}
+  .callout h3{margin-top:0;}
+  .glance{width:100%; border-collapse:collapse; margin:8px 0 8px; font-size:0.95rem;}
+  .glance th, .glance td{text-align:left; vertical-align:top; padding:12px 14px; border-bottom:1px solid var(--ivory-dim);}
+  .glance th{font-weight:500; color:var(--green); width:38%; background:rgba(22,51,28,0.03);}
+
+  footer{background:var(--green); color:rgba(238,234,229,0.7); padding:60px 0 40px; margin-top:50px;}
+  .foot-logo-img{height:32px; width:auto; display:block; margin-bottom:24px;}
+  .foot-logo{font-family:var(--serif); font-size:1.4rem; letter-spacing:0.26em; color:var(--ivory); margin-bottom:22px;}
+  .aoc{line-height:1.8; color:rgba(238,234,229,0.6); margin-bottom:32px; font-size:0.86rem;}
+  .foot-bottom{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px; padding-top:22px; border-top:1px solid rgba(238,234,229,0.14); font-size:0.8rem; color:rgba(238,234,229,0.5);}
+  .foot-bottom a{color:rgba(238,234,229,0.78); text-decoration:none;}
+  .foot-bottom a:hover{color:var(--ivory);}
+  .foot-links{display:flex; gap:22px;}
+  .powered{text-transform:uppercase; letter-spacing:0.1em; font-size:0.72rem; color:rgba(238,234,229,0.42);}
+
+  @media (max-width:680px){
+    .wrap{padding:0 22px;} nav{padding:0 22px;}
+    .doc-head{padding:56px 0 44px;} .doc{padding:46px 0 20px;}
+    .glance th{width:auto;}
+    .foot-bottom{flex-direction:column; align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+
+<nav aria-label="Primary">
+  <a href="index.html" class="nav-logo" aria-label="Wirrah home"><img src="wirrah-logo-light.png" alt="Wirrah" class="logo-img" onerror="this.outerHTML='<span>WIRRAH</span>'"></a>
+  <a href="index.html" class="nav-back">&larr; Back to home</a>
+</nav>
+
+<header class="doc-head">
+  <div class="wrap">
+    <p class="eyebrow">Wirrah Pty Ltd &nbsp;&middot;&nbsp; ABN 38 696 995 794</p>
+    <h1>Privacy Statement</h1>
+    <p class="meta"><b>Last updated:</b> [DATE TO CONFIRM AT PUBLISHING] &nbsp;&middot;&nbsp; <b>Applies to:</b> visitors to wirrah.com.au and participants in the Wirrah program.</p>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap">
+    <div class="inner">
+
+      <h2>1. Who we are and what this covers</h2>
+      <p>Wirrah Pty Ltd (ABN 38 696 995 794) ("Wirrah", "we", "us", "our") is a First Nations majority-owned company. This Privacy Statement explains how we handle personal information in two settings: when you visit our website at wirrah.com.au, and when your organisation participates in the Wirrah program.</p>
+      <p>We are bound by the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs). For First Nations data, we go further than the Privacy Act requires, applying the Maiam nayri Wingara Indigenous Data Sovereignty Principles described in section 5.</p>
+
+      <div class="callout">
+        <h3>The short version</h3>
+        <p>The Wirrah program is built so that your organisation's data never leaves your own Microsoft 365 environment. Wirrah and GraceX do not hold, copy, or take your data out of your tenancy. Your organisation owns it, controls who sees it, and keeps it when the engagement ends.</p>
+      </div>
+
+      <h2>2. Information collected through the website</h2>
+      <p>The website is a single information page. It does not run analytics or advertising cookies, and it does not host a contact form. You can read the whole site without giving us any personal information.</p>
+      <p>Personal information only reaches us when you choose to act on it:</p>
+      <ul>
+        <li><strong>Email.</strong> If you email us, we receive your email address and whatever you include in your message.</li>
+        <li><strong>Booking a conversation.</strong> The "Book a conversation" links open Calendly, a third-party scheduling service. Any details you enter there are handled under Calendly's own privacy terms.</li>
+        <li><strong>Video.</strong> The page includes a YouTube video that loads only after you click it, using YouTube's privacy-enhanced (no-cookie) mode. YouTube may set cookies once you start playback, under Google's privacy terms.</li>
+        <li><strong>Web fonts.</strong> The page loads typefaces from Google Fonts, which means your browser contacts Google's servers to retrieve them.</li>
+      </ul>
+      <p>Calendly, YouTube and Google Fonts are independent services we do not control. We encourage you to review their privacy terms.</p>
+
+      <h2>3. Information handled through the Wirrah program</h2>
+      <p>When your organisation runs the Wirrah program, information is generated through the weekly check-in, the fortnightly anonymous survey, and the insights report. This can include check-in and survey responses, aggregated trend information, the insights report, and participation records.</p>
+      <p>The defining feature is where this information lives. All of it is created and stored <strong>inside your organisation's own Microsoft 365 environment</strong>. Wirrah does not operate an external platform that holds it. At no point do Wirrah, GraceX, or their personnel hold, copy, or transfer this information to an environment outside your tenancy.</p>
+
+      <h2>4. Data location, ownership and access</h2>
+      <h3>Where it is stored</h3>
+      <p>All program data is stored within your organisation's own Microsoft 365 tenancy. For Australian-billed Microsoft 365 tenants, Microsoft stores SharePoint, Exchange, Teams and Forms data at rest within Australian datacentres, consistent with Microsoft's data residency commitments for the Australia geography. Your organisation can verify its data location in the Microsoft 365 Admin Centre.</p>
+      <h3>Who owns it</h3>
+      <p>Your organisation owns all data generated through the program, unconditionally. Ownership is not qualified by any licence, procurement arrangement, or the length of the engagement. Wirrah and GraceX acquire no ownership right over it.</p>
+      <h3>Who can access it</h3>
+      <p>Access is controlled by your organisation's own Microsoft 365 administrator, on a need-to-know basis. Authorised service providers engaged by Wirrah, including the organisational psychologist and technical support, access data only within your tenancy, only to the minimum needed, logged in your tenancy's audit trail, and only for the agreed scope and duration. Neither Wirrah nor GraceX holds standing administrative access to your tenancy.</p>
+      <h3>Encryption</h3>
+      <p>Survey responses are encrypted using AES-256 encryption. The encryption key is generated within your tenancy and does not leave it. Wirrah and GraceX have no access to encryption keys.</p>
+
+      <h2>5. Indigenous data sovereignty</h2>
+      <p>Wirrah treats Indigenous Data Sovereignty as a governance right, not a compliance box. It is grounded in the United Nations Declaration on the Rights of Indigenous Peoples and operationalised in Australia through the <a href="https://www.maiamnayriwingara.org/mnw-principles" target="_blank" rel="noopener">Maiam nayri Wingara Indigenous Data Sovereignty Principles</a>. Our data practices are structured to align with those principles: First Nations data stays under First Nations control, accessible to the organisation that owns it, and accountable to a First Nations majority-owned entity rather than a platform vendor.</p>
+      <p>The full detail of how Wirrah aligns to each principle is set out in our Data Sovereignty Statement, available as part of the program documentation.</p>
+
+      <h2>6. Aggregated, de-identified data</h2>
+      <p>Wirrah may compile a sector-level aggregated dataset, but only where a participating organisation gives separate, voluntary, documented consent. Taking part in the program is not consent to contribute, and consent can be withdrawn at any time without affecting access to the program.</p>
+      <p>Before any data enters the aggregate, it is de-identified so that no individual organisation can be identified or singled out. Funders receive only sector-level reports with no organisation-specific information. Wirrah holds and governs the aggregate dataset as custodian, and no funder or third party becomes a custodian by procuring our services.</p>
+
+      <h2>7. Disclosure of personal information</h2>
+      <p>We do not sell, rent, or trade personal information. Information may be handled by:</p>
+      <ul>
+        <li><strong>GraceX Pty Ltd</strong>, which provides the Microsoft 365-native platform infrastructure under a commercial licence agreement with Wirrah, and which is bound by the commitments in this statement through that relationship.</li>
+        <li><strong>The organisational psychologist and technical support</strong> engaged under that licence, within the access limits in section 4.</li>
+      </ul>
+      <p>We may also disclose personal information where required or authorised by law.</p>
+
+      <h2>8. Storing your information overseas</h2>
+      <p>Program data stays within your Microsoft 365 tenancy in Australian datacentres. Some website services are provided by organisations that may process information overseas, including Calendly (scheduling), Google (YouTube and Google Fonts) and Microsoft (email). Where the APPs apply to a cross-border disclosure, we take reasonable steps consistent with APP 8.</p>
+
+      <h2>9. Security</h2>
+      <p>We take reasonable steps to protect personal information from misuse, interference, loss, and unauthorised access. For program data this rests on the controls above: storage within your own tenancy, access administered by you, AES-256 encryption of survey responses, and no external copies. No method of storage or transmission is completely secure, but the architecture is designed to keep data under your control. In the event of an eligible data breach under the Notifiable Data Breaches scheme, affected individuals and the Office of the Australian Information Commissioner (OAIC) will be notified as required by law.</p>
+
+      <h2>10. Retention and end of engagement</h2>
+      <p>Program data remains in your Microsoft 365 environment for as long as your organisation keeps it. At the end of an engagement, Wirrah and GraceX remove the technical infrastructure deployed into your tenancy. All data stays in your possession, and Wirrah holds no copies, because the data was never held outside your tenancy. Any contribution previously made to the aggregated dataset remains only in de-identified form.</p>
+
+      <h2>11. Your rights: access, correction and complaints</h2>
+      <p>You have the right to ask what personal information we hold about you and to ask us to correct it. Because most program data sits inside your own organisation's environment, requests about that data are usually resolved directly with your organisation as the data owner. For information we hold (for example, an email you sent us), contact us using the details below.</p>
+      <p>If you believe we have mishandled your personal information, you may complain to us, and we will respond. If you are not satisfied, you can escalate to the Office of the Australian Information Commissioner: <a href="https://www.oaic.gov.au/" target="_blank" rel="noopener">oaic.gov.au</a>, phone 1300 363 992.</p>
+
+      <h2>12. Accountability and contact</h2>
+      <p>Wirrah Pty Ltd (ABN 38 696 995 794) is accountable for the commitments in this statement. Tanika Perry, Worimi and Bundjalung woman, Co-Founder and Managing Director, holds 51% of Wirrah and final authority over data governance decisions.</p>
+      <p>For any privacy enquiry, access or correction request, or complaint, contact:</p>
+      <p><strong>Wirrah Pty Ltd</strong><br>
+      <!-- REVIEW: add registered postal address, or confirm email-only is acceptable -->
+      Email: <a href="mailto:tanika@wirrah.com.au">tanika@wirrah.com.au</a></p>
+
+      <h2>13. Changes to this statement</h2>
+      <p>We may update this statement to reflect changes in our practices, the platform, or the law. The current version will always be published here with a revised "last updated" date. Material changes will be notified where practicable.</p>
+
+      <p style="margin-top:34px; font-size:0.86rem; color:var(--moss);">This Privacy Statement should be read alongside Wirrah's Data Sovereignty Statement, which sets out the full detail of our Indigenous Data Sovereignty commitments.</p>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="wirrah-logo-light.png" alt="Wirrah" class="foot-logo-img" onerror="this.outerHTML='<div class=\'foot-logo\'>WIRRAH</div>'">
+    <p class="aoc">Wirrah acknowledges the Worimi and Bundjalung peoples as the Traditional Owners and Custodians of the Country on which this business operates. We pay our respects to Elders past and present, and recognise the continuing connection of First Nations peoples to Country, culture and community.</p>
+    <div class="foot-bottom">
+      <div class="foot-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
+      <span class="powered">Powered by GraceX</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
