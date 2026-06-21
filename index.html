@@ -43,7 +43,7 @@
   .lead{font-size:1.02rem; line-height:1.8; max-width:680px; color:#2a2a2a;}
   .lead + .lead{margin-top:18px;}
   /* widen intro copy in sections that sit above full-width grids, so the text aligns to the content below */
-  #problem .lead, #how .lead, #leader .lead{max-width:none;}
+  #about .lead, #problem .lead, #how .lead, #leader .lead{max-width:none;}
   .green-bg{background:var(--green);}
   .green-bg h2{color:var(--ivory);}
   .green-bg .eyebrow{color:rgba(238,234,229,0.55);}
@@ -54,7 +54,7 @@
   .nav-links{display:flex; align-items:center; gap:30px;}
   .nav-links a{font-size:0.7rem; letter-spacing:0.13em; text-transform:uppercase; color:rgba(238,234,229,0.62); text-decoration:none; font-weight:400; transition:color .2s;}
   .nav-links a:hover{color:var(--ivory);}
-  .nav-cta{font-size:0.68rem !important; letter-spacing:0.12em; text-transform:uppercase; color:var(--green) !important; background:var(--ivory); padding:9px 16px; border-radius:2px; font-weight:500; transition:opacity .2s;}
+  .nav-cta{font-size:0.68rem !important; letter-spacing:0.12em; text-transform:uppercase; color:var(--green) !important; background:var(--ivory); padding:9px 16px; border-radius:6px; font-weight:500; transition:opacity .2s;}
   .nav-cta:hover{opacity:0.86;}
   .nav-toggle{display:none;}
 
@@ -68,7 +68,7 @@
   .hero-acro{font-size:0.86rem; letter-spacing:0.05em; color:rgba(238,234,229,0.6); max-width:560px; margin-bottom:34px;}
   .hero-acro b{color:var(--ivory); font-weight:600;}
   .btns{display:flex; flex-wrap:wrap; gap:14px;}
-  .btn{display:inline-block; font-size:0.78rem; letter-spacing:0.06em; font-weight:500; padding:14px 26px; border-radius:2px; text-decoration:none; transition:all .2s; cursor:pointer;}
+  .btn{display:inline-block; font-size:0.85rem; letter-spacing:0.04em; font-weight:500; padding:13px 28px; border-radius:6px; text-decoration:none; transition:all .2s; cursor:pointer;}
   .btn-primary{background:var(--ivory); color:var(--green);}
   .btn-primary:hover{background:#fff;}
   .btn-ghost{background:transparent; color:var(--ivory); border:1px solid rgba(238,234,229,0.4);}
@@ -118,6 +118,7 @@
   .foot-bottom{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px; padding-top:24px; border-top:1px solid rgba(238,234,229,0.14); font-size:0.8rem; letter-spacing:0.03em; color:rgba(238,234,229,0.5);}
   .foot-bottom a{color:rgba(238,234,229,0.78); text-decoration:none;}
   .foot-bottom a:hover{color:var(--ivory);}
+  .foot-links{display:flex; flex-wrap:wrap; gap:22px; align-items:center;}
   .powered{text-transform:uppercase; letter-spacing:0.1em; font-size:0.72rem; color:rgba(238,234,229,0.42);}
 
   /* logo images (graceful fallback to text wordmark via onerror) */
@@ -356,7 +357,11 @@
     <img src="wirrah-logo-light.png" alt="Wirrah" class="foot-logo-img" onerror="this.outerHTML='<div class=\'foot-logo\'>WIRRAH</div>'">
     <p class="aoc">Wirrah acknowledges the Worimi and Bundjalung peoples as the Traditional Owners and Custodians of the Country on which this business operates. We pay our respects to Elders past and present, and recognise the continuing connection of First Nations peoples to Country, culture and community.</p>
     <div class="foot-bottom">
-      <a href="mailto:tanika@wirrah.com.au">tanika@wirrah.com.au</a>
+      <div class="foot-links">
+        <a href="mailto:tanika@wirrah.com.au">tanika@wirrah.com.au</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
       <span class="powered">Powered by GraceX</span>
     </div>
   </div>
