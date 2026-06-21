@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!--
+  Wirrah Pty Ltd | Supporting page (single scroll) | rev 2
+  DRAFT COPY: all body copy is placeholder, pending review and language pass by Tanika Perry.
+  RESEARCH COMPLETE (rev 3): evidence sources verified and linked; legal anchor replaced with
+    NSW WHS Regulation 2025 + SafeWork NSW Code of Practice (First Nations consultation).
+    Legal FAQ wording still to be confirmed by Lawpath and Tanika before final.
+  NOTE: hero acronym foregrounds "Resilience", a term the messaging discipline has avoided.
+    Confirm with Tanika whether it belongs on the public page.
+  CADENCE NOTE: leader-facing report set to MONTHLY here (per Roland). Survey remains fortnightly.
+    This differs from Solution Description v2 (fortnightly report) - confirm with Tanika.
+  CTA: "Book a conversation" links to a Calendly PLACEHOLDER (search: REPLACE-WITH-TANIKA-WIRRAH).
+  Hosting: GitHub Pages + custom domain wirrah.com.au (see CNAME file in repo root).
+-->
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Wirrah | First Nations workforce protection</title>
+<meta name="description" content="Wirrah is a First Nations-designed, First Nations-led way to see colonial load and act on it, before it becomes a departure or a claim.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#EEEAE5; --ivory-dim:#DDD9D3; --green:#16331C;
+    --moss:#4D596A; --everglade:#681C1C; --text:#1f1f1f;
+    --serif:'Playfair Display',Georgia,'Times New Roman',serif;
+    --sans:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans); font-weight:300; background:var(--ivory); color:var(--text); font-size:16px; line-height:1.7; -webkit-font-smoothing:antialiased;}
+  a{color:inherit;}
+  ::selection{background:rgba(22,51,28,0.15);}
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 32px;}
+  .section{padding:86px 0;}
+  .section + .section{border-top:1px solid var(--ivory-dim);}
+  .eyebrow{font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--moss); font-weight:500; margin-bottom:18px;}
+  h2{font-family:var(--serif); font-weight:400; color:var(--green); font-size:clamp(1.6rem,3.4vw,2.4rem); line-height:1.18; margin-bottom:22px; max-width:760px;}
+  .lead{font-size:1.02rem; line-height:1.8; max-width:680px; color:#2a2a2a;}
+  .lead + .lead{margin-top:18px;}
+  .green-bg{background:var(--green);}
+  .green-bg h2{color:var(--ivory);}
+  .green-bg .eyebrow{color:rgba(238,234,229,0.55);}
+  .green-bg .lead{color:rgba(238,234,229,0.86);}
+
+  nav{position:sticky; top:0; z-index:50; background:var(--green); display:flex; align-items:center; justify-content:space-between; padding:0 32px; height:58px;}
+  .nav-logo{font-family:var(--serif); font-size:1.05rem; letter-spacing:0.28em; color:var(--ivory); text-decoration:none; font-weight:500; padding-left:2px;}
+  .nav-links{display:flex; align-items:center; gap:30px;}
+  .nav-links a{font-size:0.7rem; letter-spacing:0.13em; text-transform:uppercase; color:rgba(238,234,229,0.62); text-decoration:none; font-weight:400; transition:color .2s;}
+  .nav-links a:hover{color:var(--ivory);}
+  .nav-cta{font-size:0.68rem !important; letter-spacing:0.12em; text-transform:uppercase; color:var(--green) !important; background:var(--ivory); padding:9px 16px; border-radius:2px; font-weight:500; transition:opacity .2s;}
+  .nav-cta:hover{opacity:0.86;}
+  .nav-toggle{display:none;}
+
+  .hero{background:linear-gradient(rgba(22,51,28,0.94),rgba(22,51,28,0.85)),url('assets/hero-bg.jpg') center/cover no-repeat; color:var(--ivory); padding:100px 0 90px;}
+  .hero .eyebrow{color:rgba(238,234,229,0.5);}
+  .hero h1{font-family:var(--serif); font-weight:400; color:var(--ivory); font-size:clamp(2.3rem,5.4vw,4rem); line-height:1.08; letter-spacing:0.01em; max-width:15ch; margin-bottom:26px;}
+  .hero h1 .accent{color:#cfd6c9; font-style:italic;}
+  .hero-def{font-size:1rem; line-height:1.7; color:rgba(238,234,229,0.68); max-width:560px; margin-bottom:22px; border-left:2px solid rgba(238,234,229,0.28); padding-left:18px;}
+  .hero-def em{font-style:italic; color:rgba(238,234,229,0.92);}
+  .hero-sub{font-size:clamp(1.02rem,1.7vw,1.18rem); color:rgba(238,234,229,0.86); max-width:560px; line-height:1.6; font-weight:300; margin-bottom:18px;}
+  .hero-acro{font-size:0.86rem; letter-spacing:0.05em; color:rgba(238,234,229,0.6); max-width:560px; margin-bottom:34px;}
+  .hero-acro b{color:var(--ivory); font-weight:600;}
+  .btns{display:flex; flex-wrap:wrap; gap:14px;}
+  .btn{display:inline-block; font-size:0.78rem; letter-spacing:0.06em; font-weight:500; padding:14px 26px; border-radius:2px; text-decoration:none; transition:all .2s; cursor:pointer;}
+  .btn-primary{background:var(--ivory); color:var(--green);}
+  .btn-primary:hover{background:#fff;}
+  .btn-ghost{background:transparent; color:var(--ivory); border:1px solid rgba(238,234,229,0.4);}
+  .btn-ghost:hover{border-color:var(--ivory); background:rgba(238,234,229,0.06);}
+
+  /* stat band: one continuous green band, content vertically centred */
+  .stat-band{display:grid; grid-template-columns:repeat(4,1fr); background:var(--green); margin-top:44px;}
+  .stat{padding:34px 26px; border-left:1px solid rgba(238,234,229,0.16); display:flex; flex-direction:column; justify-content:center;}
+  .stat:first-child{border-left:none;}
+  .stat-num{font-family:var(--serif); color:var(--ivory); font-size:2.1rem; line-height:1; margin-bottom:12px;}
+  .stat-label{font-size:0.82rem; color:rgba(238,234,229,0.66); line-height:1.5;}
+  .fineprint{font-size:0.78rem; color:var(--moss); margin-top:22px; max-width:680px; line-height:1.6;}
+
+  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin-top:48px;}
+  .step{padding:0 28px; border-left:1px solid var(--ivory-dim);}
+  .step:first-child{padding-left:0; border-left:none;}
+  .step-num{font-family:var(--serif); font-size:2.4rem; color:var(--moss); line-height:1; margin-bottom:18px; opacity:0.7;}
+  .step-title{font-family:var(--serif); font-size:1.22rem; color:var(--green); margin-bottom:12px; line-height:1.25;}
+  .step-body{font-size:0.92rem; color:#333; line-height:1.7;}
+
+  .out-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--ivory-dim); margin-top:46px; border:1px solid var(--ivory-dim);}
+  .out{background:var(--ivory); padding:28px 26px;}
+  .out h3{font-family:var(--serif); font-size:1.12rem; color:var(--green); font-weight:500; margin-bottom:10px;}
+  .out p{font-size:0.9rem; color:#333; line-height:1.65;}
+
+  /* FAQ */
+  .faq{max-width:820px; margin-top:44px;}
+  .faq details{border-bottom:1px solid var(--ivory-dim);}
+  .faq details:first-child{border-top:1px solid var(--ivory-dim);}
+  .faq summary{cursor:pointer; list-style:none; padding:24px 0; display:flex; justify-content:space-between; align-items:center; gap:24px; font-family:var(--serif); font-size:1.14rem; color:var(--green); transition:color .2s;}
+  .faq summary:hover{color:var(--moss);}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:'+'; font-family:var(--sans); font-weight:400; font-size:1.3rem; color:var(--moss); transition:transform .25s; flex-shrink:0;}
+  .faq details[open] summary::after{transform:rotate(45deg);}
+  .faq .ans{padding:0 0 26px; max-width:700px; color:#2d2d2d; line-height:1.72; font-size:0.95rem;}
+  .faq .ans a{color:var(--moss); text-decoration:underline; text-underline-offset:2px;}
+  .faq .ans + .ans{margin-top:14px;}
+
+  .cta-final{background:linear-gradient(rgba(22,51,28,0.93),rgba(22,51,28,0.87)),url('assets/cta-bg.jpg') center/cover no-repeat; color:var(--ivory); text-align:center; padding:100px 0;}
+  .cta-final h2{color:var(--ivory); margin:0 auto 18px; max-width:18ch;}
+  .cta-final .lead{color:rgba(238,234,229,0.82); margin:0 auto 32px;}
+  .cta-final .btns{justify-content:center;}
+
+  footer{background:var(--green); color:rgba(238,234,229,0.7); padding:66px 0 42px;}
+  .foot-logo{font-family:var(--serif); font-size:1.5rem; letter-spacing:0.26em; color:var(--ivory); margin-bottom:24px;}
+  .aoc{max-width:680px; line-height:1.8; color:rgba(238,234,229,0.6); margin-bottom:34px; font-size:0.88rem;}
+  .foot-bottom{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px; padding-top:24px; border-top:1px solid rgba(238,234,229,0.14); font-size:0.8rem; letter-spacing:0.03em; color:rgba(238,234,229,0.5);}
+  .foot-bottom a{color:rgba(238,234,229,0.78); text-decoration:none;}
+  .foot-bottom a:hover{color:var(--ivory);}
+  .powered{text-transform:uppercase; letter-spacing:0.1em; font-size:0.72rem; color:rgba(238,234,229,0.42);}
+
+  /* logo images (graceful fallback to text wordmark via onerror) */
+  .logo-img{height:23px; width:auto; display:block;}
+  .foot-logo-img{height:34px; width:auto; display:block; margin-bottom:26px;}
+
+  /* video band */
+  .video-section{background:var(--green);}
+  .video-wrap{position:relative; max-width:900px; margin:40px auto 18px; aspect-ratio:16/9; border-radius:4px; overflow:hidden; cursor:pointer; background:#0f2414;}
+  .video-wrap img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s ease;}
+  .video-wrap:hover img{transform:scale(1.03);}
+  .video-overlay{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(15,36,20,0.28);}
+  .play-btn{width:74px; height:74px; border-radius:50%; background:rgba(238,234,229,0.94); display:flex; align-items:center; justify-content:center; transition:transform .2s, background .2s;}
+  .video-wrap:hover .play-btn{transform:scale(1.08); background:var(--ivory);}
+  .play-btn::after{content:''; border-left:22px solid var(--green); border-top:13px solid transparent; border-bottom:13px solid transparent; margin-left:6px;}
+  .video-cap{text-align:center; font-size:0.84rem; color:rgba(238,234,229,0.6); letter-spacing:0.03em;}
+
+  /* origin story */
+  .why-grid{display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center; margin-top:8px;}
+  .why-img{margin:0;}
+  .why-img img{width:100%; border-radius:4px; display:block;}
+  .why-cap{font-size:0.78rem; color:var(--moss); letter-spacing:0.04em; margin-top:12px;}
+
+  @media (max-width:760px){
+    .why-grid{grid-template-columns:1fr; gap:34px;}
+    .why-img{order:-1;}
+  }
+
+  .reveal{opacity:0; transform:translateY(16px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:none;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;} .reveal{opacity:1; transform:none; transition:none;}}
+  *:focus-visible{outline:2px solid var(--moss); outline-offset:3px;}
+
+  @media (max-width:880px){
+    .stat-band{grid-template-columns:repeat(2,1fr);}
+    .stat:nth-child(3){border-left:none;}
+    .stat:nth-child(n+3){border-top:1px solid rgba(238,234,229,0.16);}
+    .steps{grid-template-columns:1fr; gap:34px;}
+    .step{padding:0; border-left:none; border-top:1px solid var(--ivory-dim); padding-top:26px;}
+    .step:first-child{border-top:none; padding-top:0;}
+    .out-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width:680px){
+    .wrap{padding:0 22px;} nav{padding:0 22px;}
+    .nav-links{display:none;}
+    .nav-links.open{display:flex; flex-direction:column; position:absolute; top:58px; left:0; right:0; background:var(--green); padding:18px 22px 24px; gap:18px; align-items:flex-start;}
+    .nav-toggle{display:block; background:none; border:none; color:var(--ivory); font-size:1.3rem; cursor:pointer;}
+    .section{padding:62px 0;} .hero{padding:74px 0 62px;}
+    .stat-band{grid-template-columns:1fr;}
+    .stat{border-left:none; border-top:1px solid rgba(238,234,229,0.16);}
+    .stat:first-child{border-top:none;}
+    .foot-bottom{flex-direction:column; align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+
+<nav aria-label="Primary">
+  <a href="#top" class="nav-logo" aria-label="Wirrah home"><img src="assets/wirrah-logo-light.png" alt="Wirrah" class="logo-img" onerror="this.outerHTML='WIRRAH'"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#8801;</button>
+  <div class="nav-links" id="navlinks">
+    <a href="#problem">The Problem</a>
+    <a href="#how">How It Works</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="https://calendly.com/REPLACE-WITH-TANIKA-WIRRAH" class="nav-cta">Book a conversation</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">First Nations workforce protection</p>
+    <h1>The load your best people carry doesn't appear in any <span class="accent">job description.</span></h1>
+    <p class="hero-sub">Wirrah makes colonial load visible inside your organisation, before it becomes a departure or a claim.</p>
+    <p class="hero-acro"><b>W</b>orkplace <b>I</b>nclusion <b>R</b>esilience <b>R</b>elationship in <b>A</b>ction <b>H</b>elp</p>
+    <div class="btns">
+      <a href="https://calendly.com/REPLACE-WITH-TANIKA-WIRRAH" class="btn btn-primary">Book a conversation</a>
+      <a href="mailto:tanika@wirrah.com.au" class="btn btn-ghost">Email us</a>
+    </div>
+  </div>
+</header>
+
+<!-- WHAT WIRRAH IS -->
+<section class="section" id="about">
+  <div class="wrap reveal">
+    <p class="eyebrow">What Wirrah is</p>
+    <h2>A First Nations-designed, First Nations-led way to see colonial load, and act on it.</h2>
+    <p class="lead">Wirrah identifies the early signals of colonial load inside your organisation and turns them into a clear, plain-language picture for the person who carries the duty to act. The program is designed and led by First Nations practitioners, and the organisation is First Nations majority-owned.</p>
+    <p class="lead">The result is earlier intervention: leaders can support their people before pressure becomes a departure, or a claim.</p>
+  </div>
+</section>
+
+<!-- VIDEO BAND -->
+<section class="section video-section" id="video">
+  <div class="wrap reveal">
+    <p class="eyebrow">Hear from Tanika</p>
+    <h2>A few minutes on why this matters.</h2>
+    <!-- VIDEO: Tanika_V6 on YouTube (https://youtu.be/AIVmRjmZDjY). Loads only on click. -->
+    <div class="video-wrap" data-yt="AIVmRjmZDjY" role="button" tabindex="0" aria-label="Play the Wirrah video">
+      <img src="assets/video-poster.jpg" alt="Tanika Perry, Managing Director of Wirrah">
+      <div class="video-overlay"><span class="play-btn"></span></div>
+    </div>
+    <p class="video-cap">Tanika Perry, Co-Founder and Managing Director</p>
+  </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section class="section" id="problem">
+  <div class="wrap reveal">
+    <p class="eyebrow">The problem</p>
+    <h2>It isn't disengagement. It's departure.</h2>
+    <p class="lead">Aboriginal and Torres Strait Islander workers are expected to educate colleagues, represent their culture, absorb racial microaggressions without reacting, and carry cultural obligations alongside their professional responsibilities, all without it being named, counted or supported. This is colonial load. It compounds, it accumulates, and for most organisations it stays completely invisible.</p>
+    <p class="lead">People do not become less committed. They leave. For First Nations organisations this matters more than anywhere else: they employ First Nations people at twelve times the rate of non-Indigenous businesses, so when their people go, community trust, clinical relationships and cultural credibility go with them. That loss never appears on an invoice.</p>
+    <div class="stat-band">
+      <div class="stat"><div class="stat-num" data-target="75" data-suffix="%">75%</div><div class="stat-label">of annual salary is the direct cost to replace each person who leaves</div></div>
+      <div class="stat"><div class="stat-num" data-prefix="$" data-target="550" data-suffix="k+">$550k+</div><div class="stat-label">turnover exposure for a 42-staff organisation with seven departures in a year</div></div>
+      <div class="stat"><div class="stat-num" data-target="42" data-suffix="%">42%</div><div class="stat-label">of that turnover is preventable through earlier intervention</div></div>
+      <div class="stat"><div class="stat-num" data-prefix="$" data-target="91" data-suffix="k">$91k</div><div class="stat-label">direct cost of a single psychological injury claim, before legal costs</div></div>
+    </div>
+    <p class="fineprint">Replacement cost is a conservative figure consistent with published Australian health sector benchmarks; actual costs range from 50 to 150 percent of salary depending on seniority. The 42-staff figures are illustrative and modelled on sector data.</p>
+  </div>
+</section>
+
+<!-- WHY WIRRAH (origin story) -->
+<section class="section" id="why">
+  <div class="wrap reveal">
+    <div class="why-grid">
+      <div class="why-text">
+        <p class="eyebrow">Why Wirrah</p>
+        <h2>Led by First Nations people, for First Nations workplaces.</h2>
+        <p class="lead">Colonial load is not a concept Wirrah read about. It is lived. Wirrah exists because the people it protects have carried this load themselves, named it, and decided it should no longer go unseen or unmeasured.</p>
+        <p class="lead">Most workforce tools were built for one kind of workplace and adapted for everyone else. Wirrah was built the other way around: First Nations-led from the first decision, so the way it asks, listens and reports is culturally safe by design, not by retrofit.</p>
+        <!-- PLACEHOLDER: Tanika to add her own origin statement here, in her words. Do not invent a quote on her behalf. -->
+      </div>
+      <figure class="why-img">
+        <img src="assets/why-tanika.jpg" alt="Tanika Perry, Co-Founder and Managing Director of Wirrah">
+        <figcaption class="why-cap">Tanika Perry, Worimi and Bundjalung woman, Managing Director</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <div class="wrap reveal">
+    <p class="eyebrow">How it works</p>
+    <h2>Staff speak. Signals are detected. Leadership acts.</h2>
+    <p class="lead">Wirrah runs inside your organisation's existing Microsoft 365 environment, using tools your staff already have. No new software, no external platform, no new vendor relationship for IT to manage. It operates through three components, each culturally grounded, that together form a closed loop.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-title">Culturally safe check-in</div>
+        <p class="step-body">Each week, staff receive a brief, culturally grounded check-in through your existing Microsoft Teams channels. It is not a survey. It is a consistent, safe point of contact that builds the trust staff need to speak up when something is not right.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-title">Early signals survey</div>
+        <p class="step-body">Every two weeks, staff complete a short anonymous survey through Microsoft Forms. Responses are reviewed by a First Nations-led expert panel, who interpret what the early signals show and what to act on.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-title">Readiness Assessment</div>
+        <p class="step-body">At the start of engagement, Wirrah runs a structured Readiness Assessment. It gives leadership a baseline: where colonial load is concentrated, which parts of the organisation are under the most pressure, and what to address first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT THE LEADER RECEIVES -->
+<section class="section" id="leader">
+  <div class="wrap reveal">
+    <p class="eyebrow">What the leader receives</p>
+    <h2>A clear picture, and a clear action. Every month.</h2>
+    <p class="lead">The primary output is a monthly plain-language report delivered directly to the CEO or MD. The First Nations-led expert panel interprets the data and writes the report. The leader does not run a dashboard or translate findings: they receive a clear picture and a clear next step.</p>
+    <div class="out-grid">
+      <div class="out"><h3>Monthly plain-language report</h3><p>A human-written summary of early signals, with specific recommended actions. Written by the First Nations-led expert panel, not generated by software.</p></div>
+      <div class="out"><h3>Early departure signals</h3><p>The patterns that precede a departure become visible before the resignation arrives. Earlier visibility means earlier intervention.</p></div>
+      <div class="out"><h3>Colonial load visibility</h3><p>A structured, recurring view of where colonial load is concentrated across the organisation. Most organisations do not have this at all.</p></div>
+      <div class="out"><h3>Documented record of action</h3><p>A timestamped record that the organisation identified psychosocial risk and acted on it. Defensible under Australian WHS law.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ (absorbs: what-it-is-not, legal, data sovereignty, evidence) -->
+<section class="section" id="faq">
+  <div class="wrap reveal">
+    <p class="eyebrow">Questions</p>
+    <h2>What leaders ask before they start.</h2>
+    <div class="faq">
+      <details>
+        <summary>Is Wirrah an AI tool?</summary>
+        <div class="ans">No. No algorithm interprets your staff's responses. A First Nations-led expert panel reviews the signals and writes the report. The judgement is human, and it is culturally grounded.</div>
+      </details>
+      <details>
+        <summary>Do our staff need to download an app or log into anything new?</summary>
+        <div class="ans">No. Wirrah runs in Microsoft Teams and Microsoft Forms, the tools your staff already use. There is nothing to download, log into, or learn, and no new platform for IT to manage.</div>
+      </details>
+      <details>
+        <summary>Is this the same as our EAP?</summary>
+        <div class="ans">No. An EAP is a referral service that activates after harm has occurred. Wirrah works upstream of that: it identifies risk early, so leaders can act before it becomes a claim. The two are complementary, not the same thing.</div>
+      </details>
+      <details>
+        <summary>Isn't this just cultural awareness training?</summary>
+        <div class="ans">No. Training is a one-off event. Wirrah is a recurring system that runs every week and every fortnight, and produces an ongoing, documented record of action.</div>
+      </details>
+      <details>
+        <summary>What does Australian work health and safety law require of us?</summary>
+        <!-- Sources: NSW WHS Act 2011 + WHS Regulation 2025 (commenced 22 Aug 2025); SafeWork NSW Code of Practice (s274 approved). Model Code of Practice names Aboriginal and Torres Strait Islander workers among groups more likely exposed and calls for their consultation. CONFIRM exact NSW-code wording with Lawpath and Tanika before final. -->
+        <div class="ans">Under New South Wales work health and safety law, the Work Health and Safety Act 2011 and the Work Health and Safety Regulation 2025 (in force from 22 August 2025), employers have a duty to identify and manage psychosocial hazards so far as is reasonably practicable, applying the hierarchy of controls. The <a href="https://www.safework.nsw.gov.au/resource-library/list-of-all-codes-of-practice/codes-of-practice/managing-psychosocial-hazards-at-work" target="_blank" rel="noopener">SafeWork NSW Code of Practice for managing psychosocial hazards at work</a>, which courts can treat as evidence of what is reasonably practicable, recognises discrimination as a psychosocial hazard and names Aboriginal and Torres Strait Islander workers among the groups more likely to be exposed, calling for them to be consulted directly. Managing colonial load sits inside this duty, and Wirrah is built to produce the documented record it requires.</div>
+      </details>
+      <details>
+        <summary>Where does our data live, and is it culturally safe?</summary>
+        <div class="ans">Your data stays inside your organisation's own Microsoft 365 tenancy. It is encrypted to AES-256 and is never held on an external Wirrah platform. The approach is built around the principles of the <a href="https://www.maiamnayriwingara.org/mnw-principles" target="_blank" rel="noopener">Maiam nayri Wingara Indigenous Data Sovereignty Collective</a>: First Nations data stays under First Nations control.</div>
+      </details>
+      <details>
+        <summary>What is the evidence base?</summary>
+        <div class="ans">A few of the findings the program is built on: 63% of First Nations workers report high levels of identity strain at work, and 39% carry high or very high cultural load as extra, unrecognised work (<a href="https://www.uts.edu.au/about/faculties/business/research/centre-for-indigenous-people-and-work-cipw/gari-yala-speak-the-truth" target="_blank" rel="noopener">Diversity Council Australia and UTS Jumbunna Institute, Gari Yala, 2020</a>). First Nations median tenure is 4.7 years against 6.2 for non-Indigenous colleagues (<a href="https://www.apsc.gov.au/initiatives-and-programs/workforce-information/research-analysis-and-publications/state-service/state-service-report-2023-24/aps-profile/boosting-first-nations-employment" target="_blank" rel="noopener">Australian Public Service Commission, State of the Service 2023-24</a>). Indigenous businesses and corporations are twelve times more likely to employ a First Nations worker than non-Indigenous businesses (<a href="https://www.unimelb.edu.au/newsroom/news/2025/november/report-highlights-importance-of-indigenous-owned-businesses-in-closing-employment-gap" target="_blank" rel="noopener">Dilin Duwa Centre, Indigenous Business and Corporation Snapshot 4.0, 2025</a>). The 42% preventable-turnover figure is from <a href="https://www.gallup.com/workplace/646538/employee-turnover-preventable-often-ignored.aspx" target="_blank" rel="noopener">Gallup, 2024</a>.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="cta-final" id="contact">
+  <div class="wrap reveal">
+    <h2>Make colonial load visible before it costs you your people.</h2>
+    <p class="lead">Book a conversation with the Wirrah team.</p>
+    <div class="btns">
+      <a href="https://calendly.com/REPLACE-WITH-TANIKA-WIRRAH" class="btn btn-primary">Book a conversation</a>
+      <a href="mailto:tanika@wirrah.com.au" class="btn btn-ghost">Email us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <img src="assets/wirrah-logo-light.png" alt="Wirrah" class="foot-logo-img" onerror="this.outerHTML='<div class=\'foot-logo\'>WIRRAH</div>'">
+    <p class="aoc">Wirrah acknowledges the Worimi and Bundjalung peoples as the Traditional Owners and Custodians of the Country on which this business operates. We pay our respects to Elders past and present, and recognise the continuing connection of First Nations peoples to Country, culture and community.</p>
+    <div class="foot-bottom">
+      <a href="mailto:tanika@wirrah.com.au">tanika@wirrah.com.au</a>
+      <span class="powered">Powered by GraceX</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var t=document.querySelector('.nav-toggle'), l=document.getElementById('navlinks');
+    if(t&&l){
+      t.addEventListener('click',function(){var open=l.classList.toggle('open'); t.setAttribute('aria-expanded',open);});
+      l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open'); t.setAttribute('aria-expanded',false);});});
+    }
+  })();
+  (function(){
+    var els=document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion:reduce)').matches){els.forEach(function(e){e.classList.add('in');}); return;}
+    var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in'); io.unobserve(en.target);}});},{threshold:0.12});
+    els.forEach(function(e){io.observe(e);});
+  })();
+  // video: click-to-load YouTube (privacy-friendly nocookie). Replace data-yt with the real ID.
+  (function(){
+    document.querySelectorAll('.video-wrap').forEach(function(v){
+      function load(){
+        var id=v.getAttribute('data-yt');
+        if(!id || id==='REPLACE_YT_ID') return;
+        v.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0" title="Wirrah" allow="autoplay; encrypted-media; fullscreen" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>';
+      }
+      v.addEventListener('click',load);
+      v.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();load();}});
+    });
+  })();
+  // animated count-up for the problem numbers (builds as the band scrolls in)
+  (function(){
+    var band=document.querySelector('.stat-band');
+    if(!band) return;
+    var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+    var nums=band.querySelectorAll('.stat-num');
+    function fmt(el,val){return (el.getAttribute('data-prefix')||'')+Math.round(val)+(el.getAttribute('data-suffix')||'');}
+    function run(){
+      nums.forEach(function(el){
+        var target=parseFloat(el.getAttribute('data-target'));
+        if(reduce || !('requestAnimationFrame' in window)){el.textContent=fmt(el,target); return;}
+        var dur=1400, start=null;
+        function step(t){
+          if(start===null) start=t;
+          var p=Math.min((t-start)/dur,1), eased=1-Math.pow(1-p,3);
+          el.textContent=fmt(el, target*eased);
+          if(p<1) requestAnimationFrame(step); else el.textContent=fmt(el,target);
+        }
+        requestAnimationFrame(step);
+      });
+    }
+    if(reduce || !('IntersectionObserver' in window)){run(); return;}
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run(); io.disconnect();}});},{threshold:0.4});
+    io.observe(band);
+  })();
+</script>
+</body>
+</html>
